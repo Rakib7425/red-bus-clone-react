@@ -9,10 +9,11 @@ const Results = () => {
             const data = await fetch(url);
             const res = await data.json();
             setBusses(res);
-        }
+        };
+
         getBus();
 
-        // disabled-next-line
+        //eslint-disable-next-line
     }, [])
 
     return (
