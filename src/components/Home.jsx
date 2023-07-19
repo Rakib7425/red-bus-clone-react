@@ -46,9 +46,10 @@ const Home = () => {
 
                 </div>
 
-                <div className="mt-[61vh] absolute">
-
-                    <img className="h-28" src='./red-bus-logo.png' alt="logoImg" />
+                <div className="mt-[61vh] absolute w-full">
+                    <marquee direction="right">
+                        <img className="h-28" src='./red-bus-logo.png' alt="logoImg" />
+                    </marquee>
                 </div>
             </div>
 
