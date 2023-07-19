@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 
+
 const Results = () => {
     const [busses, setBusses] = useState([]);
 
@@ -18,18 +19,21 @@ const Results = () => {
 
     return (
         <>
-            <div className="flex items-center justify-center text-black mt-12 ">
+            <div className="flex items-center justify-center text-black mt-4 ">
                 <table className="border-2 border-green-600 min-w-[90vw] text-center">
                     <thead className="bg-purple-600">
-                        <th>Bus No.</th>
-                        <th className="">Bus Name</th>
-                        <th>Ticket Price</th>
-                        <th>Arrival Time</th>
-                        <th>Departure Time</th>
-                        <th>source/From</th>
-                        <th>Destination/To</th>
-                        <th>Date</th>
-                        <th>Book Bus</th>
+                        <tr>
+
+                            <th>Bus No.</th>
+                            <th className="">Bus Name</th>
+                            <th>Ticket Price</th>
+                            <th>Arrival Time</th>
+                            <th>Departure Time</th>
+                            <th>source/From</th>
+                            <th>Destination/To</th>
+                            <th>Date</th>
+                            <th>Book Bus</th>
+                        </tr>
                     </thead>
                     <tbody>
                         {/* <tr className="border-b-2 border-blue-600 font-semibold">
@@ -45,9 +49,9 @@ const Results = () => {
                         </tr> */}
 
                         {
-                            busses && busses.map((bus => {
+                            busses && busses.map(((bus, index) => {
                                 return (
-                                    <tr key={bus.id} className="border-b-2 border-blue-600 font-semibold">
+                                    <tr key={index} className="border-b-2 border-blue-600 font-semibold">
                                         <td>{bus.id}</td>
                                         <td >{bus.busName}</td>
                                         <td>Rs. {bus.ticketPrice}</td>
@@ -78,9 +82,9 @@ const Results = () => {
 
                 </table>
             </div>
-            <tfoot className="flex justify-center items-center w-full mt-10">
+            <div className="flex justify-center items-center w-full mt-10">
                 NB::: No Refund Applicable. <span className="text-blue-600 cursor-pointer mx-2">why?</span>
-            </tfoot>
+            </div>
         </>
     )
 }
