@@ -9,7 +9,6 @@ const App = () => {
     <>
       <Header />
       <main className='bg-red-200 mx-auto'>
-
         <Routes>
           <Route path='/' element={<Home />} />
         </Routes>
