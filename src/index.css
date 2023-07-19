@@ -2,18 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-	line-height: 1.5;
-	font-weight: 400;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;1,300;1,400;1,600&display=swap");
 
-	color-scheme: light dark;
-	color: rgba(255, 255, 255, 0.87);
-	background-color: hsl(87, 75%, 9%);
-
-	font-synthesis: none;
-	text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-text-size-adjust: 100%;
+body {
+	font-family: "Poppins", sans-serif;
+	/* background-color: hsl(86, 75%, 8%); */
 }

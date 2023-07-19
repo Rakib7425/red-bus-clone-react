@@ -8,7 +8,7 @@ const App = () => {
   return (
     <>
       <Header />
-      <main className='bg-red-200 mx-auto'>
+      <main className=' mx-auto'>
         <Routes>
           <Route path='/' element={<Home />} />
         </Routes>
